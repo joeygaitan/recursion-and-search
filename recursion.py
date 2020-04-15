@@ -14,11 +14,13 @@ def factorial(n):
 
 def factorial_iterative(n):
     # TODO: implement the factorial function iteratively here
-    pass
     # once implemented, change factorial (above) to call factorial_iterative
     # to verify that your iterative implementation passes all tests
-
-
+    sum = 1
+    for i in range(1,n+1):
+        sum = sum * i
+    return sum
+    
 def factorial_recursive(n):
     # check if n is one of the base cases
     if n == 0 or n == 1:

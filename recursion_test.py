@@ -1,10 +1,10 @@
 #!python
 
 from recursion import factorial
-import unittest
+import unittest2
 
 
-class RecursionTest(unittest.TestCase):
+class RecursionTest(unittest2.TestCase):
     def test_factorial_with_small_integers(self):
         # factorial should return the product n*(n-1)*...*2*1 for n >= 0
         assert factorial(0) == 1  # base case
@@ -39,4 +39,4 @@ class RecursionTest(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest2.main()
